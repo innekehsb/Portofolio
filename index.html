@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-i"></i>
+                    <div class="logo-text">Inneke Nugroho Hasibuan</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#">Project</a>
+                            <ul class="dropdown-content">
+                                <!-- Tautan ke dua proyek -->
+                                <li><a href="https://www.figma.com/proto/J8bMTfZXxDoMLarCig0GLs/Untitled?node-id=1-2&node-type=canvas&t=hvXJFz3LixGTvC6m-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1">Project 1</a></li>
+                                <li><a href="https://www.figma.com/proto/CygO62s6p1tCqRGnu4e9Uy/Aplikasi-Coffe-Shop---UI-Design-(Community)?node-id=184-455&node-type=canvas&t=KadLFlo3lxNeh0sx-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1">Project 2</a></li>
+                                <li><a href="https://www.figma.com/design/X8Coe2g5N2FWir4ygICpy9/Untitled?node-id=0-1&t=vz45TlMAoO6mobk7-1">Project 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="asset/CV_Inneke Nugroho Hasibuan.pdf">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="mailto:ikennehsbn@gmail.com">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="images/My_Picture.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Inneke Nugroho Hasibuan</h1>
+                    <p> Saya adalah seorang Mahasiswi Akhir dengan keahlian dalam Bidang designer
+                        Berfokus pada solusi kreatif dan inovatif, saya telah terlibat dalam berbagai proyek. 
+                        Dengan keterampilan di Desain, saya selalu berusaha memberikan hasil yang berkualitas tinggi.
+                         Saya juga senang mengeksplorasi ide-ide baru dan memadukan kreativitas dengan strategi yang efektif untuk mencapai tujuan yang diinginkan.
+                    </p>
+
+                    <div class="btn-group">
+                        <!-- Pastikan untuk mengganti 'your-cv-file.pdf' dengan path atau URL file yang sebenarnya -->
+                        <a href="asset/CV_Inneke Nugroho Hasibuan.pdf" class="btn active" target="_blank" download>Download CV</a>
+                        <a href="mailto:ikennehsbn@gmail.com" class="btn">Contact</a>
+                    </div>
+                    
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://linkedin.com/in/inneke-hasibuan-52992a234"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/inneke22_"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="https://id.pinterest.com/ikennehsbn"><i class="fa-brands fa-pintrest"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","UX Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
